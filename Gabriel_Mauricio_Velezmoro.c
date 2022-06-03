@@ -14,7 +14,7 @@ PILHA p;
 PILHA p2;
 
 void push(void);
-void  unstack(void);
+void unstack(void);
 void display(void);
 
 int main ()
@@ -58,6 +58,7 @@ int main ()
     return 0;
 }
 
+
 void push()
 {
     char value[STRING_MAXSIZE];
@@ -88,6 +89,7 @@ void push()
 
 } 
 
+
 void unstack()
 {
     char num[STRING_MAXSIZE];
@@ -97,18 +99,14 @@ void unstack()
     }
     else
     {
-        if (p2.top == (STACK_MAXSIZE - 1))
-            {
-                printf ("Pilha Cheia!\n");
-                return;
-            }
             
         printf ("o prato a ser retirado é da cor: = %s\n", p.pilhaa[p.top]);
         
-        p2.top = p.pilhaa[p.top];
+        
         p.top = p.top - 1;
     }
 }
+
 
 void display()
 {
