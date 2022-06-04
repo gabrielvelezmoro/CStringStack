@@ -100,9 +100,8 @@ void unstack()
     else
     {
             
-        printf ("o prato a ser retirado é da cor: = %s\n", p.pilhaa[p.top]);
-        
-        
+        printf ("o prato a ser retirado é da cor: %s\n", p.pilhaa[p.top]);
+
         p.top = p.top - 1;
     }
 }
